@@ -4,22 +4,94 @@ class Distance {
     companion object{
         val types = listOf("Meter","Millimeter","Centimeter","Kilometer")
 
+        fun convert(value: Int, firstMeasure: String, secondMeasure: String): String{
+            var result = ""
 
-        fun meterToMillimeter(meter:Int) : Int = meter*1000
-        fun meterToCentimeter(meter:Int) : Int = meter*100
-        fun meterToKilometer(meter:Int) : Double = meter*0.001
+            when(firstMeasure){
+                types[0] ->{
+                    when(secondMeasure){
+                        types[0] -> {
+                            result = value.toString()
+                        }
+                        types[1] -> {
+                            result = meterToMillimeter(value).toString()
+                        }
+                        types[2] -> {
+                            result = meterToCentimeter(value).toString()
+                        }
+                        types[3] -> {
+                            result = meterToKilometer(value).toString()
+                        }
+                    }
+                }
+                types[1] ->{
+                    when(secondMeasure){
+                        types[0] -> {
+                            result = millimeterToMeter(value).toString()
+                        }
+                        types[1] -> {
+                            result = value.toString()
+                        }
+                        types[2] -> {
+                            result = millimeterToCentimeter(value).toString()
+                        }
+                        types[3] -> {
+                            result = millimeterToKilometer(value).toString()
+                        }
+                    }
+                }
+                types[2] ->{
+                    when(secondMeasure){
+                        types[0] -> {
+                            result = centimeterToMeter(value).toString()
+                        }
+                        types[1] -> {
+                            result = centimeterToMillimeter(value).toString()
+                        }
+                        types[2] -> {
+                            result = value.toString()
+                        }
+                        types[3] -> {
+                            result = centimeterToKilometer(value).toString()
+                        }
+                    }
+                }
+                types[3] ->{
+                    when(secondMeasure){
+                        types[0] -> {
+                            result = kilometerToMeter(value).toString()
+                        }
+                        types[1] -> {
+                            result = kilometerToMillimeter(value).toString()
+                        }
+                        types[2] -> {
+                            result = kilometerToCentimeter(value).toString()
+                        }
+                        types[3] -> {
+                            result = value.toString()
+                        }
+                    }
+                }
+            }
+
+            return result
+        }
+
+        private fun meterToMillimeter(meter:Int)  = meter*1000
+        private fun meterToCentimeter(meter:Int)  = meter*100
+        private fun meterToKilometer(meter:Int)  = meter*0.001
 
 
-        fun millimeterToMeter(millimeter:Int) : Double = millimeter * 0.001
-        fun millimeterToCentimeter(millimeter:Int) : Double = millimeter * 0.1
-        fun millimeterToKilometer(millimeter:Int) : Double = millimeter * 0.000_000_1
+        private fun millimeterToMeter(millimeter:Int) = millimeter * 0.001
+        private fun millimeterToCentimeter(millimeter:Int)  = millimeter * 0.1
+        private fun millimeterToKilometer(millimeter:Int)  = millimeter * 0.000_000_1
 
-        fun centimeterToMeter(centimeter: Int): Double = centimeter*0.01
-        fun centimeterToMillimeter(centimeter: Int): Double = centimeter*0.1
-        fun centimeterToKilometer(centimeter: Int): Double = centimeter*0.000_001
+        private fun centimeterToMeter(centimeter: Int) = centimeter*0.01
+        private fun centimeterToMillimeter(centimeter: Int) = centimeter*0.1
+        private fun centimeterToKilometer(centimeter: Int) = centimeter*0.000_001
 
-        fun kilometerToMeter(kilometer: Int): Int = kilometer*100
-        fun kilometerToMillimeter(kilometer: Int): Int = kilometer*100_000_0
-        fun kilometerToCentimeter(kilometer: Int): Int = kilometer*100_000
+        private fun kilometerToMeter(kilometer: Int) = kilometer*1000
+        private fun kilometerToMillimeter(kilometer: Int) = kilometer*100_000_0
+        private fun kilometerToCentimeter(kilometer: Int) = kilometer*100_000
     }
 }

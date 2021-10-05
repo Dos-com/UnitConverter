@@ -1,19 +1,22 @@
 package com.zhandos.unitconverter
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.EditText
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
+import androidx.core.text.isDigitsOnly
 import androidx.fragment.app.Fragment
 
 private const val UNIT_TYPE = "unit type"
+private const val TAG = "ConvertFragment"
 
-class ConvertFragment: Fragment() {
+class ConvertFragment: Fragment(), AdapterView.OnItemSelectedListener {
     private var unitType:String =""
+    private var value: Int = 0
     private var listTypes = listOf<String>()
     private lateinit var unitConvertEditText: EditText
     private lateinit var spinnerUnit1: Spinner
@@ -71,7 +74,53 @@ class ConvertFragment: Fragment() {
         spinnerUnit1.adapter = adapter
         spinnerUnit2.adapter = adapter
 
+
+        spinnerUnit2.onItemSelectedListener = this
+
+        unitConvertEditText.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+                if (s?.isDigitsOnly() == true && !s?.isNullOrBlank()){
+                    value = s.toString().toInt()
+                    convert()
+                }
+                else{
+                    resultConvert.text = "0"
+                }
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+
+            }
+
+        })
+
         return view
+    }
+
+    private fun convert(){
+        when(unitType){
+            UnitListFragment.unitList[0] -> {
+                resultConvert.text = Distance.convert(value,listTypes[spinnerUnit1.selectedItemPosition], listTypes[spinnerUnit2.selectedItemPosition])
+                // val unitList = listOf("Distance","Weight","Time","Temperature","Currency", "Number systems BIN/OCT/DEC/HEX")
+            }
+            UnitListFragment.unitList[1] -> {
+                resultConvert.text = Weight.convert(value,listTypes[spinnerUnit1.selectedItemPosition], listTypes[spinnerUnit2.selectedItemPosition])
+            }
+            UnitListFragment.unitList[2] -> {
+                resultConvert.text = Time.convert(value,listTypes[spinnerUnit1.selectedItemPosition], listTypes[spinnerUnit2.selectedItemPosition])
+            }
+            UnitListFragment.unitList[3] -> {
+                resultConvert.text = Temperature.convert(value,listTypes[spinnerUnit1.selectedItemPosition], listTypes[spinnerUnit2.selectedItemPosition]).toString()
+            }
+            UnitListFragment.unitList[4] -> {
+                resultConvert.text = NumberSystems.convert(value.toString(),listTypes[spinnerUnit1.selectedItemPosition], listTypes[spinnerUnit2.selectedItemPosition])
+            }
+        }
     }
 
     companion object{
@@ -83,5 +132,14 @@ class ConvertFragment: Fragment() {
                 arguments = arg
             }
         }
+    }
+
+    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        Log.d("TAG", "onItemSelected: ${listTypes[position]}")
+        convert()
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>?) {
+        Log.d("TAG", "onItemSelected: ")
     }
 }
