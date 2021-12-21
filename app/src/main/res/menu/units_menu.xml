@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/lengthFragment"
+        android:icon="@drawable/ic_action_length"
+        android:title="@string/length"/>
+
+    <item
+        android:id="@+id/numberSystemFragment"
+        android:icon="@drawable/ic_action_numbers"
+        android:title="@string/number_system"/>
+
+    <item
+        android:id="@+id/temperatureFragment"
+        android:icon="@drawable/ic_action_temperature"
+        android:title="@string/temperature"/>
+
+    <item
+        android:id="@+id/timeFragment"
+        android:icon="@drawable/ic_action_time"
+        android:title="@string/time"/>
+
+    <item
+        android:id="@+id/weightFragment"
+        android:icon="@drawable/ic_action_weight"
+        android:title="@string/weight"/>
+</menu>

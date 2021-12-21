@@ -1,5 +1,160 @@
 <resources>
     <string name="app_name">UnitConverter</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map">Map</string>
+    <string name="dial">Dial</string>
+    <string name="mail">Mail</string>
+    <string name="converter">Converter</string>
+    <string name="translator">Translator</string>
+    <string name="animals_translator">Animal Translator</string>
+    <string name="length">Length</string>
+    <string name="number_system">Number System</string>
+    <string name="temperature">Temperature</string>
+    <string name="time">Time</string>
+    <string name="weight">Weight</string>
+    <string name="downloaded_models_label">Downloaded models: %1$s</string>
+    <string name="downloading_modal_progress">Downloading modal...</string>
+    <string name="translate_progress">Translating...</string>
+    <string name="translate">Translate</string>
+    <string name="fail_to_translate">Fail to Translate : %1$s</string>
+    <string name="fail_to_download_modal">Fail to download language Modal %1$s</string>
+    <string name="current_lang">Current Lang</string>
+    <string name="target_lang">Target Lang</string>
+    <string name="choose_lang">Choose Lang</string>
+    <string name="please_enter_text">Please, enter your text to translate</string>
+    <string name="please_select_source_lang">Please, select source language</string>
+    <string name="please_select_target_lang">Please, select target language</string>
+
+
+
+    <string-array name="length_units">
+        <item>inch</item>
+        <item>ft</item>
+        <item>yd</item>
+        <item>meter</item>
+        <item>dm</item>
+        <item>cm</item>
+        <item>mm</item>
+        <item>um</item>
+        <item>km</item>
+        <item>mile</item>
+    </string-array>
+
+    <string-array name="number_system_units">
+        <item>HEX</item>
+        <item>OCT</item>
+        <item>BIN</item>
+        <item>DEC</item>
+    </string-array>
+
+    <string-array name="temp_units">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string-array name="time_units">
+        <item>Seconds</item>
+        <item>Minutes</item>
+        <item>Hours</item>
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+        <item>Century</item>
+    </string-array>
+
+    <string-array name="weight_units">
+        <item>Milligrams</item>
+        <item>Gram</item>
+        <item>Kilograms</item>
+        <item>Сentner</item>
+        <item>Ton</item>
+    </string-array>
+
+    <string-array name="languages_name_list">
+        <item>Afrikaans</item>
+        <item>Albanian</item>
+        <item>Arabic</item>
+        <item>Belarusian</item>
+        <item>Bengali</item>
+        <item>Bulgarian</item>
+        <item>Catalan</item>
+        <item>Chinese (Simplified)</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Estonian</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>Galician</item>
+        <item>Georgian</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Gujarati</item>
+        <item>Haitian Creole</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Icelandic</item>
+        <item>Indonesian</item>
+        <item>Irish</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Kannada</item>
+        <item>Korean</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Macedonian</item>
+        <item>Malay</item>
+        <item>Maltese</item>
+        <item>Marathi</item>
+        <item>Norwegian</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Portuguese (Portugal, Brazil)</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Spanish</item>
+        <item>Swahili</item>
+        <item>Swedish</item>
+        <item>Tagalog (Filipino)</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Vietnamese</item>
+        <item>Welsh</item>
+    </string-array>
+
+    <string-array name="animals_array">
+        <item>Accentor</item>
+        <item>Bear</item>
+        <item>Blackbird</item>
+        <item>Cat</item>
+        <item>Chicken</item>
+        <item>Cobra</item>
+        <item>Cow</item>
+        <item>Crocodile</item>
+        <item>Crow</item>
+        <item>Dog</item>
+        <item>Dolphin</item>
+        <item>Elephant</item>
+        <item>Frog</item>
+        <item>Horse</item>
+        <item>Lion</item>
+        <item>Monkey</item>
+        <item>Owl</item>
+        <item>Pig</item>
+        <item>Sheep</item>
+        <item>Sparrow</item>
+        <item>Tiger</item>
+    </string-array>
 </resources>

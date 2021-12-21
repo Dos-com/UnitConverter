@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LengthFragment">
+    
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/length_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter number"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_weight="0.5"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_length"
+                android:spinnerMode="dialog"
+                android:layout_weight="1"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/length_inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="inch"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/length_ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="feet"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/length_yd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yard"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/length_meter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="meter"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/length_dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dm"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/length_cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/length_mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mm"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/length_um"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="um"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/length_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="km"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/length_mile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mile"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+
+
+
+
+</TableLayout>

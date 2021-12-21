@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LengthFragment">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/weight_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter number"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_weight="0.5"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_weight"
+                android:spinnerMode="dialog"
+                android:layout_weight="1"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/weight_mlgrams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="miligram"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/weight_grams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="gram"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/weight_kilograms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/weight_centner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="centner"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/weight_ton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ton"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+
+
+
+</TableLayout>

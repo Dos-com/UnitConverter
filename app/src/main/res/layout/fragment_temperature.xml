@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LengthFragment"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter number"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_weight="0.5"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_temperature"
+                android:spinnerMode="dialog"
+                android:layout_weight="1"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/temp_Fahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/temp_Celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celsius"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/temp_Kelvin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelvin"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+
+
+</TableLayout>

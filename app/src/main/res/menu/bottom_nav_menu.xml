@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/unitFragment"
+        android:icon="@drawable/ic_action_converter"
+        android:title="@string/converter" />
+    <item
+        android:id="@+id/translatorFragment"
+        android:icon="@drawable/ic_action_translator"
+        android:title="@string/translator" />
+    <item
+        android:id="@+id/animalTranslatorFragment"
+        android:icon="@drawable/ic_action_animal_translator"
+        android:title="@string/animals_translator" />
+</menu>

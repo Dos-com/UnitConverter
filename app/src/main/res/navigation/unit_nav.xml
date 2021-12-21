@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/unit_nav"
+    app:startDestination="@id/lengthFragment">
+
+    <fragment
+        android:id="@+id/lengthFragment"
+        android:name="com.zhandos.unitconverter.LengthFragment"
+        android:label="fragment_length"
+        tools:layout="@layout/fragment_length" />
+    <fragment
+        android:id="@+id/numberSystemFragment"
+        android:name="com.zhandos.unitconverter.NumberSystemFragment"
+        android:label="fragment_number_system"
+        tools:layout="@layout/fragment_number_system" />
+    <fragment
+        android:id="@+id/temperatureFragment"
+        android:name="com.zhandos.unitconverter.TemperatureFragment"
+        android:label="fragment_temperature"
+        tools:layout="@layout/fragment_temperature" />
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.zhandos.unitconverter.WeightFragment"
+        android:label="fragment_weight"
+        tools:layout="@layout/fragment_weight" />
+    <fragment
+        android:id="@+id/timeFragment"
+        android:name="com.zhandos.unitconverter.TimeFragment"
+        android:label="fragment_time"
+        tools:layout="@layout/fragment_time" />
+</navigation>
